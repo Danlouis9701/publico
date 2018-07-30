@@ -1,32 +1,10 @@
-/* Required for full background image */
-
-html,
-body,
-header,
-.view {
-  height: 100%;
+.view{
+    height: 100vh;
 }
-
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 1000px;
-  }
-}
-@media (min-width: 800px) and (max-width: 850px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 600px;
-  }
-}
-
 .btn .fa {
   margin-left: 3px;
 }
+
 
 .top-nav-collapse {
   background-color: white !important;
@@ -34,24 +12,37 @@ header,
 .top-nav-collapse .nav-item .nav-link {
   color: black !important;
 }
+.top-nav-collapse .navbar-toggler .menubarra {
+  color: black !important;
+}
 
+.top-nav-collapse  .btn-white{
+   background: black !important;
+    color: white !important;    
+}
 
 .navbar:not(.top-nav-collapse) {
   background: black !important;
 }
 
 .navbar:not(.top-nav-collapse) .nav-item .nav-link {
-  color: white!important;
+  color: white !important;
 }
+
+.navbar:not(.top-nav-collapse) .navbar-toggler .navbar-toggler-icon {
+  color: black !important;
+}
+
+.navbar:not(.top-nav-collapse) .btn .btn-white .btn-menu-contacto {
+  background: black !important;
+}
+
+
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
     background: black !important;
   }
-}
-
-.btn-white {
-  color: black !important;
 }
 
 h6 {
@@ -64,4 +55,18 @@ h6 {
   background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
   background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
   background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+}
+.titulos {
+    font-size: 2rem;
+}
+
+.logoWhite {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.logoBlack {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
