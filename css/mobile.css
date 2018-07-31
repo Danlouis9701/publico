@@ -1,72 +1,154 @@
-.view{
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+.sans-light {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.sans-bold {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+header{
+    width: 100%;
     height: 100vh;
 }
-.btn .fa {
-  margin-left: 3px;
+.view {
+    margin: 0 auto;
+    width: 95%;
+    height: 95vh;
 }
 
+.slide {
+    background-image: url(../img/primerslide_foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.btn .fa {
+    margin-left: 3px;
+}
+
+.dropdown-menu {
+    width: 100%;
+}
 
 .top-nav-collapse {
-  background-color: white !important;
-}
-.top-nav-collapse .nav-item .nav-link {
-  color: black !important;
-}
-.top-nav-collapse .navbar-toggler .menubarra {
-  color: black !important;
+    background-color: white !important;
 }
 
-.top-nav-collapse  .btn-white{
-   background: black !important;
-    color: white !important;    
+.top-nav-collapse .nav-item .nav-link {
+    color: black !important;
+}
+
+.top-nav-collapse .navbar-toggler .menubarra {
+    color: black !important;
+}
+
+.top-nav-collapse .btn-white {
+    background: black !important;
+    color: white !important;
 }
 
 .navbar:not(.top-nav-collapse) {
-  background: black !important;
+    background: black !important;
 }
 
 .navbar:not(.top-nav-collapse) .nav-item .nav-link {
-  color: white !important;
+    color: white !important;
 }
 
 .navbar:not(.top-nav-collapse) .navbar-toggler .navbar-toggler-icon {
-  color: black !important;
+    color: black !important;
 }
 
 .navbar:not(.top-nav-collapse) .btn .btn-white .btn-menu-contacto {
-  background: black !important;
+    background: black !important;
 }
 
 
 
 @media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: black !important;
-  }
+    .navbar:not(.top-nav-collapse) {
+        background: black !important;
+    }
 }
 
 h6 {
-  line-height: 1.7;
+    line-height: 1.7;
 }
 
 .rgba-gradient {
-  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
-  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.5), rgba(29, 210, 177, 0.5) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.5), rgba(29, 210, 177, 0.5) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.5)), to(rgba(29, 210, 177, 0.5)));
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.5), rgba(29, 210, 177, 0.5) 100%);
+    background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.5), rgba(29, 210, 177, 0.5) 100%);
 }
+
 .titulos {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .logoWhite {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 50px;
+    z-index: 1;
 }
+
 .logoBlack {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 50px;
+}
+
+
+
+#ubicaciones {
+    background-color: #e7e8e9;
+}
+
+.mt-negativo {
+    margin-top: -180px;
+}
+
+.m-botton {
+    margin-bottom: 10rem;
+}
+
+.redes {
+    width: 42px;
+    height: 42px;
+    margin: 0.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+}
+
+#red1 {
+    background-image: url(../img/iconos/redes/rectangulo.svg);
+}
+#red2 {
+    background-image: url(../img/iconos/redes/negro/ig_negro.svg);
+}
+#red3 {
+    background-image: url(../img/iconos/redes/negro/fb_negro.svg);
+}
+#red4 {
+    background-image: url(../img/iconos/redes/negro/tw_negro.svg);
+}
+#red5 {
+    background-image: url(../img/iconos/redes/negro/spotify_negro.svg);
+}
+
+header {
+    background-color: black;
 }

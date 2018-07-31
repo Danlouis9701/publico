@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-1">
+    <image id="Vector_Smart_Object" data-name="Vector Smart Object" x="11" y="1" width="20" height="39" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAnCAQAAAClbqCFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAFxEAABcRAcom8z8AAAAHdElNRQfiBx8RLRF6fDiqAAAAoUlEQVQ4y2NgQAdiDMUMWxmeMnxn+I8CUQAjQyXDDzQFWBV24lCEptCI4R9uhUxIClMYGBmIAjfwWPwf2YxvDJy4TUFYzYlPGQMDC5zFjiF3nSGH4R2mFgEMdxVgtxoTfCBWIQNZChnRYxEH+EOsia+JVficWIWviFX4gliFL1kYJkKZ7AwZaJK7Ga7B2bsQwphRmICsi/oxM6pwVOFgUggAT41gd0DKOp0AAAAASUVORK5CYII="/>
+  </g>
+</svg>
