@@ -124,29 +124,28 @@ h6 {
 }
 
 .redes {
-    width: 42px;
-    height: 42px;
-    margin: 0.5rem;
+    width: 32px;
+    height: 32px;
+    margin: 0.8rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    background-color: aliceblue;
 }
 
 #red1 {
-    background-image: url(../img/iconos/redes/rectangulo.svg);
+    background-image: url(../img/iconos/redes/negro/linkedin_n.svg);
 }
 #red2 {
-    background-image: url(../img/iconos/redes/negro/ig_negro.svg);
+    background-image: url(../img/iconos/redes/negro/ig_n.svg);
 }
 #red3 {
-    background-image: url(../img/iconos/redes/negro/fb_negro.svg);
+    background-image: url(../img/iconos/redes/negro/facebook_n.svg);
 }
 #red4 {
-    background-image: url(../img/iconos/redes/negro/tw_negro.svg);
+    background-image: url(../img/iconos/redes/negro/twitter_n.svg);
 }
 #red5 {
-    background-image: url(../img/iconos/redes/negro/spotify_negro.svg);
+    background-image: url(../img/iconos/redes/negro/spotify_n.svg);
 }
 
 header {
