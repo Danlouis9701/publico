@@ -12,6 +12,7 @@
 html {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    font-size: 12px;
 }
 
 header{
@@ -38,7 +39,18 @@ header{
 .dropdown-menu {
     width: 100%;
 }
-
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #bebebe;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
 .top-nav-collapse {
     background-color: white !important;
 }
@@ -149,5 +161,60 @@ h6 {
 }
 
 header {
-    background-color: black;
+    background-color: #000000;
+}
+
+.text-realce {
+    color: #cd7f6d;
+}
+.realce-green{
+    color: #507a52;
+}
+
+/*
+.owl-carousel .owl-item img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+*/
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    padding-bottom: 3rem;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+    margin: 5px 7px;
+    background: #fff;
+    border: solid 2px #cf816f;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #cf816f;
+}
+
+.bottom {
+    position: absolute;
+    bottom:1rem;
+}
+
+.btn-outline-black {
+    border: 2px solid #000!important;
+    background-color: transparent!important;
+    color: #000!important;
+}
+
+.btn-outline-green {
+     border: 2px solid #507a52!important;
+    background-color: transparent!important;
+    color: #507a52!important;
 }

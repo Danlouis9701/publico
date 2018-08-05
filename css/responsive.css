@@ -1,0 +1,42 @@
+/*// Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+    html {
+        font-size: 13px;
+    }
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+/*
+    .owl-carousel .owl-item img {
+    width: 50%;
+    }
+*/
+    
+}
+
+/*// Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+    
+    
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+    
+    
+}

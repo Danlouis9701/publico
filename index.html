@@ -22,7 +22,7 @@
 
     <header>
         <nav class="navbar navbar-dark elegant-color-dark fixed-top scrolling-navbar">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="img/logoWhite.png" class="logoWhite" width="50" alt="">
                 </a>
@@ -34,13 +34,13 @@
                     <button type="button" class="btn btn-white btn-menu-contacto">Contacto</button>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars menubarra" aria-hidden="true"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                     <ul class="navbar-nav ml-auto">
+                        <!--
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Espacios de trabajo
@@ -48,12 +48,30 @@
                             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="#">Muzquis</a>
                                 <a class="dropdown-item" href="#">Puebla</a>
-                                <!--                                <div class="dropdown-divider"></div>-->
                                 <a class="dropdown-item" href="#">Molier</a>
                                 <a class="dropdown-item" href="#">Seneca</a>
                                 <a class="dropdown-item" href="#">Hamburgo</a>
                                 <a class="dropdown-item" href="#">Lomas</a>
                             </div>
+                        </li>
+-->
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-haspopup="true" aria-controls="collapseExample">Espacios de trabajo<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+                        </li>
+                        <li>
+                            <!-- Collapsible element -->
+                            <div class="collapse" id="collapseExample">
+                                <div class="mt-1">
+                                    <a class="dropdown-item" href="#">Muzquis</a>
+                                    <a class="dropdown-item" href="#">Puebla</a>
+                                    <a class="dropdown-item" href="#">Molier</a>
+                                    <a class="dropdown-item" href="#">Seneca</a>
+                                    <a class="dropdown-item" href="#">Hamburgo</a>
+                                    <a class="dropdown-item" href="#">Lomas</a>
+                                </div>
+                            </div>
+                            <!-- / Collapsible element -->
                         </li>
 
                         <li class="nav-item">
@@ -93,16 +111,16 @@
             <!-- Mask & flexbox options-->
             <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
                 <!-- Content -->
-                <div class="container">
+                <div class="container-fluid">
                     <!--Grid row-->
-                    <div class="row justify-content-between">
+                    <div class="row justify-content-around">
                         <!--Grid column-->
                         <!--                        <div class="col-12 mt-5 py-5"></div>-->
                         <div class="col-md-6 white-text text-center text-md-left mt-3 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
                             <h1 class="h1-responsive font-weight-bold mt-lg-5">ESPACIOS PARA CREAR</h1>
-                            <hr class="hr-light">
+                            <!--                            <hr class="hr-light">-->
                             <h6 class="mb-4">Renta de espacios de coworkingy oficinas privadas en la CDMX.</h6>
-                            <a class="btn btn-white">Conoce mas</a>
+
 
                         </div>
                         <!--Grid column-->
@@ -116,9 +134,15 @@
                                 <div class="redes" id="red5"></div>
                             </div>
                         </div>
+
                         <!--Grid column-->
                     </div>
                     <!--Grid row-->
+                    <div class="row align-items-end justify-content-center">
+                        <div class="col-10 col-md-6 col-lg-3 text-center mt-5 bottom">
+                            <a class="btn btn-block btn-white">Conoce mas</a>
+                        </div>
+                    </div>
                 </div>
                 <!-- Content -->
             </div>
@@ -168,8 +192,7 @@
                                             <!-- Title -->
                                             <h4 class="card-title">Muzquiz 15</h4>
                                             <!-- Text -->
-                                            <p class="card-text">Renta tu oficina o cowork en San Miguel Chapultepec, Cercana a Polanco, Lomas,
-                                                Reforma y Condesa.</p>
+                                            <p class="card-text">Renta tu oficina o cowork en San Miguel Chapultepec, Cercana a Polanco, Lomas, Reforma y Condesa.</p>
                                         </div>
 
                                     </div>
@@ -346,10 +369,20 @@
         </div>
     </section>
 
-    <section id="servicios">
+    <section id="servicios" class="pb-5">
         <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-10 owl-carousel owl-theme">
+            <div class="row mx-0">
+                <div class="col-12 col-md-10 col-lg-7">
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-10 offset-md-1">
+                            <h2 class="titulos sans-bold">Nuestros Servicios:</h2>
+                            <p class="mb-0">¿Qué incluye la renta de nuestras oficinas?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-10 pt-5 text-center owl-services owl-carousel owl-theme">
                     <div>
                         <img src="img/iconos/areascomunes.svg" alt="">
                         <h5>Areas Comunes</h5>
@@ -398,6 +431,336 @@
     </section>
 
 
+    <section id="testimoniales" class="my-5">
+
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-lg-12">
+                    <div class="owl-testimonial owl-carousel owl-theme">
+
+                        <div>
+                            <div class="card">
+                                <div class="card-body z-depth-4 text-center">
+                                    <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lsequat.”</p>
+                                    <h5 class="card-title text-realce">Sonia Ibarra - CEO / Macario</h5>
+                                    <!-- Avatar -->
+                                    <div class="w-responsive avatar mx-auto white"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle" width="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div class="card">
+                                <div class="card-body z-depth-4 text-center">
+                                    <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lsequat.”</p>
+                                    <h5 class="card-title text-realce">Sonia Ibarra - CEO / Macario</h5>
+                                    <!-- Avatar -->
+                                    <div class="w-responsive avatar mx-auto white"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle" width="100">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div class="card">
+                                <div class="card-body z-depth-4 text-center">
+                                    <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lsequat.”</p>
+                                    <h5 class="card-title text-realce">Sonia Ibarra - CEO / Macario</h5>
+                                    <!-- Avatar -->
+                                    <div class="w-responsive avatar mx-auto white"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle" width="100">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div class="card">
+                                <div class="card-body z-depth-4 text-center">
+                                    <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lsequat.”</p>
+                                    <h5 class="card-title text-realce">Sonia Ibarra - CEO / Macario</h5>
+                                    <!-- Avatar -->
+                                    <div class="w-responsive avatar mx-auto white"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle" width="100">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="colaboradores" class="pb-5">
+        <div class="container-fluid">
+            <div class="row mx-0">
+                <div class="col-12 col-md-10 col-lg-7">
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-10 offset-md-1">
+                            <h2 class="titulos sans-bold">Nuestros Colaboradores:</h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <!--                <div class="col-10 pt-5 text-center owl-colaboradores owl-carousel owl-theme">-->
+                <div class="col-10 owl-colaboradores owl-carousel owl-theme owl-theme pt-5">
+                    <div>
+                        <!-- Grid row colaborador-->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
+                                <!-- Featured image -->
+                                <div class="overlay rounded z-depth-1 mb-lg-0 mb-4">
+                                    <img class="img-fluid" src="img/colaboradores/Pablo_Salas_.jpg" alt="Sample image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
+                                <!-- Post title -->
+                                <h3 class="font-weight-bold mb-3"><strong>Chef Pablo salas</strong></h3>
+                                <!-- Excerpt -->
+                                <p class="text-justify">Creamos comida casera con cariño e ingredientes de primera. A través de las manos del <span class="realce-green">Chef Pablo Salas</span>, ofrecemos comida y tradición casera a un precio accesible. Una selección de ingredientes frescos y de temporada, estándares de alta cocina se rodean de un entorno moderno,</p>
+
+                                <!-- Read more button -->
+                                <a class="btn btn-outline-black btn-block waves-effect"><strong>Conocenos más</strong></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </div>
+                    <div>
+                        <!-- Grid row colaborador-->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
+                                <!-- Featured image -->
+                                <div class=" overlay rounded z-depth-1 mb-lg-0 mb-4">
+                                    <img class="img-fluid" src="img/colaboradores/Pablo_Salas_.jpg" alt="Sample image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
+                                <!-- Post title -->
+                                <h3 class="font-weight-bold mb-3"><strong>Chef Pablo salas</strong></h3>
+                                <!-- Excerpt -->
+                                <p class="text-justify">Creamos comida casera con cariño e ingredientes de primera. A través de las manos del <span class="realce-green">Chef Pablo Salas</span>, ofrecemos comida y tradición casera a un precio accesible. Una selección de ingredientes frescos y de temporada, estándares de alta cocina se rodean de un entorno moderno,</p>
+
+                                <!-- Read more button -->
+                                <a class="btn btn-outline-black btn-block waves-effect"><strong>Conocenos más</strong></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </div>
+                    <div>
+                        <!-- Grid row colaborador-->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
+                                <!-- Featured image -->
+                                <div class=" overlay rounded z-depth-1 mb-lg-0 mb-4">
+                                    <img class="img-fluid" src="img/colaboradores/Pablo_Salas_.jpg" alt="Sample image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
+                                <!-- Post title -->
+                                <h3 class="font-weight-bold mb-3"><strong>Chef Pablo salas</strong></h3>
+                                <!-- Excerpt -->
+                                <p class="text-justify">Creamos comida casera con cariño e ingredientes de primera. A través de las manos del <span class="realce-green">Chef Pablo Salas</span>, ofrecemos comida y tradición casera a un precio accesible. Una selección de ingredientes frescos y de temporada, estándares de alta cocina se rodean de un entorno moderno,</p>
+
+                                <!-- Read more button -->
+                                <a class="btn btn-outline-black btn-block waves-effect"><strong>Conocenos más</strong></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </div>
+                    <div>
+                        <!-- Grid row colaborador-->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
+                                <!-- Featured image -->
+                                <div class=" overlay rounded z-depth-1 mb-lg-0 mb-4">
+                                    <img class="img-fluid" src="img/colaboradores/Pablo_Salas_.jpg" alt="Sample image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
+                                <!-- Post title -->
+                                <h3 class="font-weight-bold mb-3"><strong>Chef Pablo salas</strong></h3>
+                                <!-- Excerpt -->
+                                <p class="text-justify">Creamos comida casera con cariño e ingredientes de primera. A través de las manos del <span class="realce-green">Chef Pablo Salas</span>, ofrecemos comida y tradición casera a un precio accesible. Una selección de ingredientes frescos y de temporada, estándares de alta cocina se rodean de un entorno moderno,</p>
+
+                                <!-- Read more button -->
+                                <a class="btn btn-outline-black btn-block waves-effect"><strong>Conocenos más</strong></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </div>
+                    <div>
+                        <!-- Grid row colaborador-->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
+                                <!-- Featured image -->
+                                <div class=" overlay rounded z-depth-1 mb-lg-0 mb-4">
+                                    <img class="img-fluid" src="img/colaboradores/Pablo_Salas_.jpg" alt="Sample image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
+                                <!-- Post title -->
+                                <h3 class="font-weight-bold mb-3"><strong>Chef Pablo salas</strong></h3>
+                                <!-- Excerpt -->
+                                <p class="text-justify">Creamos comida casera con cariño e ingredientes de primera. A través de las manos del <span class="realce-green">Chef Pablo Salas</span>, ofrecemos comida y tradición casera a un precio accesible. Una selección de ingredientes frescos y de temporada, estándares de alta cocina se rodean de un entorno moderno,</p>
+
+                                <!-- Read more button -->
+                                <a class="btn btn-outline-black btn-block waves-effect"><strong>Conocenos más</strong></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="comedor" class="pb-5">
+        <div class="container-fluid">
+            <div class="row mx-0">
+                <div class="col-12 col-md-10 col-lg-7">
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-10 offset-md-1">
+                            <h2 class="titulos realce-green sans-bold">Público Comedor / Público Itacate:</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <!--                <div class="col-10 pt-5 text-center owl-colaboradores owl-carousel owl-theme">-->
+                <div class="col-12 col-lg-10 pt-5">
+                    <div>
+                        <!-- Grid row colaborador-->
+                        <div class="row justify-content-center">
+                            <!-- Grid column -->
+                            <div class="col-lg-5 mb-5">
+                                <!-- Post title -->
+                                <!--                                <h3 class="font-weight-bold mb-3"><strong>Chef Pablo salas</strong></h3>-->
+                                <!-- Excerpt -->
+                                <p class="text-justify">Creamos comida casera con cariño e ingredientes de primera. A través de las manos del <span class="realce-green">Chef Pablo Salas</span>, ofrecemos comida y tradición casera a un precio accesible. Una selección de ingredientes frescos y de temporada, estándares de alta cocina se rodean de un entorno moderno,</p>
+
+                                <!-- Read more button -->
+                                <a class="btn btn-outline-green btn-block waves-effect d-none d-lg-block">Conocenos más</a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
+                                <!-- Featured image -->
+                                <div class="overlay rounded z-depth-1 mb-lg-0 mb-4">
+                                    <img class="img-fluid" src="img/comedor.jpg" alt="Sample image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <a class="btn btn-outline-green btn-block waves-effect d-lg-none mt-4">Conocenos más</a>
+                            </div>
+                            <!-- Grid column -->
+
+
+
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="eventos" class="my-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="card">
+                        <div class="card-body z-depth-1 ">
+                            <h3 class="my-4 text-center">¿Porqué hacer tu evento en Público?</h3>
+                            <h5 class="card-text"><strong>Público coworking</strong> es la comunidad de espacio de trabajo. Nuestros versátiles espacios para talleres ofrecen amplias soluciones para planificar su próxima sesión, conferencia, conversatorio, etc.</h5>
+                            <!-- Avatar -->
+                            <div class="avatar white my-4">
+                                <img src="img/eventos.jpg" class="img-fluid d-block mx-auto">
+                            </div>
+                             <!-- Read more button -->
+                                <a class="btn btn-outline-black btn-block waves-effect"><strong>Conoce más</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -410,6 +773,7 @@
     <script src="js/animatescroll.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/animatescroll.min.js"></script>
+    <script src="js/jquery.bootstrap-autohidingnavbar.js"></script>
     <script src="js/custom.js"></script>
 </body>
 
